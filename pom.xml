@@ -29,9 +29,9 @@
     </pluginRepositories>
 
     <properties>
-        <jenkins.version>1.622</jenkins.version>
-        <workflow.version>1.14</workflow.version>
-        <github.branch.source.version>2.2.3</github.branch.source.version>
+        <jenkins.version>1.625.3</jenkins.version>
+        <workflow.version>1.14.2</workflow.version>
+        <github.branch.source.version>2.2.0</github.branch.source.version>
 
         <gmavenVersion>1.5</gmavenVersion>
     </properties>
