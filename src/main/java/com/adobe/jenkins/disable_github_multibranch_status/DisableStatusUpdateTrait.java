@@ -14,7 +14,7 @@ import org.jenkinsci.plugins.github_branch_source.GitHubSCMSourceContext;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 /**
- * Created by saville on 8/24/2017.
+ * @author saville
  */
 public class DisableStatusUpdateTrait extends SCMSourceTrait {
     /**
@@ -29,8 +29,8 @@ public class DisableStatusUpdateTrait extends SCMSourceTrait {
      */
     @Override
     protected void decorateContext(SCMSourceContext<?, ?> context) {
-        GitHubSCMSourceContext ctx = (GitHubSCMSourceContext) context;
-        ctx.withNotificationsDisabled(true);
+        GitHubSCMSourceContext ghContext = (GitHubSCMSourceContext) context;
+        ghContext.withNotificationsDisabled(true);
     }
 
     /**
